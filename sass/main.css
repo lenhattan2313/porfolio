@@ -803,8 +803,8 @@ a {
     opacity: 0;
   }
   .header-container .header .header__navigation--res.close span:nth-child(3) {
-    -webkit-transform: rotate(-42deg) translate(5.5px, 2px);
-            transform: rotate(-42deg) translate(5.5px, 2px);
+    -webkit-transform: rotate(-42deg) translate(4.5px, 2px);
+            transform: rotate(-42deg) translate(4.5px, 2px);
     width: 2rem;
   }
   .header-container .header__logo {
