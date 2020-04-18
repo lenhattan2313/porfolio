@@ -818,15 +818,15 @@ a {
     position: fixed;
     background: #e9204f;
     visibility: hidden;
-    clip-path: circle(100px at 100% -20%);
-    -webkit-clip-path: circle(100px at 100% -20%);
-    -webkit-transition: 0.75s all ease;
-    transition: 0.75s all ease;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
   }
   .header-container .header nav > .header__navigation.show {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
     visibility: visible;
-    clip-path: circle(1000px at 100% -20%);
-    -webkit-clip-path: circle(1000px at 100% -20%);
   }
   .header-container .header nav > .header__navigation .navList {
     -webkit-box-orient: vertical;
@@ -843,14 +843,8 @@ a {
     margin: 0 auto;
     margin-left: 0;
     margin-bottom: 2em;
-    -webkit-transform: translate3d(200px, 0, 0);
-            transform: translate3d(200px, 0, 0);
     -webkit-transition: 1s all ease;
     transition: 1s all ease;
-  }
-  .header-container .header nav > .header__navigation .navList .navItems.show {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
   }
   .header-container .header nav > .header__navigation .navList .navItems:nth-child(6) {
     margin: 0 auto;
@@ -1003,35 +997,5 @@ a {
   .contact__content--text {
     font-size: 4rem;
   }
-}
-
-.header-container .header nav .header__navigation > .navList .navItems:nth-child(1) {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-}
-
-.header-container .header nav .header__navigation > .navList .navItems:nth-child(2) {
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
-}
-
-.header-container .header nav .header__navigation > .navList .navItems:nth-child(3) {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
-}
-
-.header-container .header nav .header__navigation > .navList .navItems:nth-child(4) {
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
-}
-
-.header-container .header nav .header__navigation > .navList .navItems:nth-child(5) {
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
-}
-
-.header-container .header nav .header__navigation > .navList .navItems:nth-child(6) {
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
 }
 /*# sourceMappingURL=main.css.map */

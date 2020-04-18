@@ -84,15 +84,15 @@
         position: fixed;
         background: $color-primary;
         visibility: hidden;
-        clip-path: circle(100px at 100% -20%);
-        -webkit-clip-path: circle(100px at 100% -20%);
-        // transform: translate3d(0, -100%, 0);
-        transition: 0.75s all ease;
+        // clip-path: circle(100px at 100% -20%);
+        // -webkit-clip-path: circle(100px at 100% -20%);
+        transform: translate3d(0, -100%, 0);
+        transition: 0.5s all ease;
         &.show {
-          // transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
           visibility: visible;
-          clip-path: circle(1000px at 100% -20%);
-          -webkit-clip-path: circle(1000px at 100% -20%);
+          // clip-path: circle(1000px at 100% -20%);
+          // -webkit-clip-path: circle(1000px at 100% -20%);
         }
         .navList {
           flex-direction: column;
@@ -106,12 +106,8 @@
             margin: 0 auto;
             margin-left: 0;
             margin-bottom: 2em;
-            transform: translate3d(200px, 0, 0);
             transition: 1s all ease;
 
-            &.show {
-              transform: translate3d(0, 0, 0);
-            }
             &:nth-child(6) {
               margin: 0 auto;
               margin-left: 0;
@@ -275,10 +271,10 @@
   }
 }
 
-@for $x from 1 through 6 {
-  .header-container .header nav .header__navigation > .navList {
-    .navItems:nth-child(#{$x}) {
-      transition-delay: $x * 0.1s;
-    }
-  }
-}
+// @for $x from 1 through 6 {
+//   .header-container .header nav .header__navigation > .navList {
+//     .navItems:nth-child(#{$x}) {
+//       transition-delay: $x * 0.1s;
+//     }
+//   }
+// }
