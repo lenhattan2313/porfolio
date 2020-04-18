@@ -1,0 +1,37 @@
+.footer-container {
+  background: $color-primary;
+  .footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 4em;
+    padding-bottom: 1em;
+    .copyright {
+      color: $color-white;
+      letter-spacing: 1px;
+      font-size: 0.7rem;
+      margin-left: 2em;
+      padding-top: 1em;
+    }
+    &__text {
+      color: $color-white;
+      .heading__main {
+        text-align: center;
+      }
+      p {
+        font-weight: 900;
+        text-align: end;
+        margin-right: 3em;
+        position: relative;
+        &::before {
+          content: "";
+          background: $color-white;
+          width: 2.5rem;
+          height: 0.2rem;
+          position: absolute;
+          bottom: 0.37rem;
+          right: 6.5rem;
+        }
+      }
+    }
+  }
+}

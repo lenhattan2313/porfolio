@@ -1,0 +1,5 @@
+@mixin beforePseudo {
+}
+@mixin easeOut {
+  transition: 0.3s all ease-out;
+}

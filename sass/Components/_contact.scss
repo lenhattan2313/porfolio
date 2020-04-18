@@ -1,0 +1,47 @@
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &--text {
+      font-size: 7rem;
+      font-weight: 900;
+      color: $color-primary;
+      letter-spacing: 2px;
+    }
+    &--box {
+      .social {
+        margin-top: 2em;
+
+        .icon {
+          position: relative;
+          margin-right: 1.5em;
+          border-bottom: 2px solid $color-primary;
+          .fa {
+            font-size: 2rem;
+            transition: 0.5s all ease;
+            &:hover {
+              color: $color-primary;
+              transform: translateY(3px);
+            }
+          }
+        }
+      }
+      .form-contact {
+        border-bottom: 2px solid $color-primary;
+        padding-bottom: 0.5em;
+        input {
+          border: none;
+          margin-left: 2em;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}

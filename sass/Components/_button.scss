@@ -1,0 +1,44 @@
+.btn {
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 1px;
+  color: $color-primary;
+  border: 1px solid $color-primary;
+  border-radius: 0.5em;
+  padding: 0.7em 1.3em;
+  margin-top: 0.5em;
+  display: inline-block;
+  z-index: 2;
+  background: white;
+  overflow: hidden;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    background: $color-primary;
+    @include easeOut;
+  }
+  &:hover {
+    color: $color-white;
+    &::before {
+      width: 100%;
+    }
+  }
+}
+.move-up {
+  position: fixed;
+  bottom: 5%;
+  z-index: 10;
+  right: 3%;
+  font-size: 3rem;
+  color: darkcyan;
+  &:hover {
+    cursor: pointer;
+    color: $color-primary;
+  }
+}
