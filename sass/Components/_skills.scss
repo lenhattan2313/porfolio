@@ -29,7 +29,7 @@
       justify-content: start;
       align-items: center;
       border: 2px solid #ededed;
-      padding: 2em;
+      padding: 1em;
       transform: translateY(3px);
       transition: 0.5s all ease;
       img {
@@ -42,6 +42,7 @@
         .skills-items {
           transform: translateY(3px);
           transition: 0.5s all ease;
+          margin-top: 0.5em;
           span {
             background: #d8d7d8;
             padding: 0.2em 0.4em;

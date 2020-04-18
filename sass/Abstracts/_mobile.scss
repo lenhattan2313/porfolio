@@ -1,9 +1,8 @@
 // (min-width: 768px) and (max-width: 991px)
 @include mediaMd {
-  html {
-    font-size: 12px;
+  .heading__main {
+    font-size: 3rem;
   }
-
   .intro-container {
     .intro {
       &__yourself {
@@ -32,12 +31,18 @@
       width: 300px;
     }
   }
+  .skills__grid {
+    width: 95% !important;
+  }
 }
 
 // (min-width: 576px) and (max-width: 767px)
 @include mediaSm {
-  html {
-    font-size: 13px;
+  // html {
+  //   font-size: 13px;
+  // }
+  .header-container .header__logo a {
+    margin-top: unset !important;
   }
   .header-container {
     // height: 100vh;
@@ -170,18 +175,21 @@
       flex-direction: column;
       padding-bottom: 1em;
       border-bottom: 1px solid #f3f3f3;
+      &:nth-child(4) {
+        border-bottom: none !important;
+      }
       .portfolio-img {
         width: 100%;
         margin-bottom: 1em;
         img {
-          width: 300px;
+          width: 400px;
         }
       }
       .portfolio-content {
         width: 100%;
         margin-bottom: 2em;
         &__wrap {
-          width: 300px;
+          width: 400px;
         }
       }
     }
@@ -203,11 +211,9 @@
         padding-left: 2em;
         width: 70%;
         margin-right: 2em;
-        .date::after {
-          left: -3.1em;
-        }
+
         .date::before {
-          left: -12em;
+          left: -9em;
         }
       }
     }
@@ -217,10 +223,14 @@
     display: flex;
     flex-direction: column;
     &--text {
-      font-size: 5rem;
+      margin-bottom: 0.5em;
     }
     &--box {
       margin-bottom: 2em;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
     }
   }
   .heading__main {
@@ -232,6 +242,7 @@
   html {
     font-size: 16px;
   }
+
   .header-container .header__logo {
     margin-left: 0 !important;
   }
@@ -255,6 +266,9 @@
         &__wrap {
           padding: 2em;
         }
+        .box {
+          left: 1em !important;
+        }
       }
     }
   }
@@ -267,14 +281,15 @@
   .skills__grid {
     grid-template-columns: 1fr;
   }
-  .heading__main--sub {
-    font-size: 1.2rem !important;
-  }
+
   .experiences__timeline {
     margin-left: 2em;
   }
-  .contact__content--text {
-    font-size: 4rem;
+  .heading__sub {
+    font-size: 1.5rem;
+  }
+  .experiences-container .experiences__timeline ul {
+    width: 100%;
   }
 }
 

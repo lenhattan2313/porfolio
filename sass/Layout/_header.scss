@@ -73,7 +73,9 @@
     }
     &__logo {
       a {
+        font-size: 1.125rem;
         margin-right: 1em;
+        margin-top: 10px;
         position: relative;
         cursor: pointer;
         display: inline-block;
@@ -83,7 +85,7 @@
           width: 1.5rem;
           height: 0.2rem;
           background-color: $color-primary;
-          bottom: 0;
+          bottom: -0.2em;
           right: 0;
         }
       }

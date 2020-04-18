@@ -9,38 +9,27 @@
     &__timeline {
       ul {
         margin: 0 auto;
-        border-left: 0.5em solid $color-primary;
+        border-left: 2px solid $color-primary;
         padding: 1.5rem;
         text-align: left;
         position: relative;
-        width: 60%;
+        width: 50%;
         font-size: 0.9rem;
         background: #f7f7f7;
-        border-radius: 1rem;
 
         .date {
           letter-spacing: 1px;
+          font-size: 1rem;
+          font-family: $font-text;
           margin-bottom: 2em;
           padding-bottom: 1em;
           border-bottom: 1px #f3f3f3 solid;
           position: relative;
-          &::before {
-            content: attr(data-date);
+          span {
             display: block;
-            position: absolute;
-            top: 40%;
-            left: -11em;
-          }
-          &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 40%;
-            left: -2.75em;
-            width: 1.5rem;
-            height: 1.5rem;
-            border-radius: 100px;
-            background: $color-secondary;
+            text-align: end;
+            font-size: 0.7rem;
+            color: grey;
           }
         }
         li:nth-child(3) {

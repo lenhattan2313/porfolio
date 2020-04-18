@@ -13,8 +13,8 @@
       position: relative;
       &--text {
         margin-top: 10rem;
-        .heading__main:nth-child(2) {
-          color: $color-primary;
+        h2 {
+          font-weight: 400;
         }
       }
       img {
@@ -48,16 +48,6 @@
           }
         }
       }
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -2.5rem;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 0.2rem;
-      height: 5rem;
-      background: $color-primary;
     }
   }
 }

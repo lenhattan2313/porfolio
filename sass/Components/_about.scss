@@ -32,23 +32,13 @@
         position: relative;
         width: 300px;
         .box {
-          width: 8rem;
-          height: 3.7rem;
+          width: 5.2rem;
+          height: 2.5rem;
           border: 1px solid black;
           position: absolute;
           left: -1rem;
         }
       }
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -2.5rem;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 0.2rem;
-      height: 5rem;
-      background: $color-primary;
     }
   }
 }

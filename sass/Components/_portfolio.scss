@@ -1,21 +1,11 @@
 .portfolio {
   background: url(../image/dot-picture.png) no-repeat;
-  background-size: 15%;
+  background-size: 14%;
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 5em;
   z-index: 2;
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -2.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0.2rem;
-    height: 5rem;
-    background: $color-primary;
-  }
 
   &__items {
     display: flex;
