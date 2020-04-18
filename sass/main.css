@@ -124,7 +124,7 @@ a {
 
 .header-container .header .header__navigation--res span {
   display: inline-block;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.51em;
   width: 2rem;
   height: 0.2rem;
   background: black;
@@ -325,16 +325,24 @@ a {
 
 .move-up {
   position: fixed;
-  bottom: 5%;
   z-index: 10;
-  right: 3%;
   font-size: 3rem;
-  color: darkcyan;
+  color: black;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  bottom: 0;
+  bottom: 12.5rem;
+  right: -4rem;
 }
 
-.move-up:hover {
-  cursor: pointer;
-  color: #e9204f;
+.move-up::after {
+  content: "";
+  width: 2em;
+  height: 2px;
+  background: black;
+  position: absolute;
+  right: -2.2em;
+  top: 0.25em;
 }
 
 .about-container {
@@ -570,6 +578,7 @@ a {
   width: 50%;
   font-size: 0.9rem;
   background: #f7f7f7;
+  margin-right: 5px;
 }
 
 .experiences-container .experiences__timeline ul .date {
@@ -735,20 +744,24 @@ a {
     -webkit-transition: 0.5s all ease;
     transition: 0.5s all ease;
   }
-  .header-container .header .header__navigation--res.close {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
   .header-container .header .header__navigation--res.close span:nth-child(1) {
-    -webkit-transform: rotate(42deg) translate(12px, 7px);
-            transform: rotate(42deg) translate(12px, 7px);
+    -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
   }
   .header-container .header .header__navigation--res.close span:nth-child(2) {
     opacity: 0;
   }
   .header-container .header .header__navigation--res.close span:nth-child(3) {
-    -webkit-transform: rotate(-42deg) translate(4.5px, 2px);
-            transform: rotate(-42deg) translate(4.5px, 2px);
+    -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
     width: 2rem;
   }
   .header-container .header__logo {

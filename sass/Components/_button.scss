@@ -32,13 +32,21 @@
 }
 .move-up {
   position: fixed;
-  bottom: 5%;
   z-index: 10;
-  right: 3%;
   font-size: 3rem;
-  color: darkcyan;
-  &:hover {
-    cursor: pointer;
-    color: $color-primary;
+  color: black;
+  transform: rotate(90deg);
+  // transform: matrix(-1, 0, 0, 1, 0, 0);
+  bottom: 0;
+  bottom: 12.5rem;
+  right: -4rem;
+  &::after {
+    content: "";
+    width: 2em;
+    height: 2px;
+    background: black;
+    position: absolute;
+    right: -2.2em;
+    top: 0.25em;
   }
 }

@@ -61,16 +61,22 @@
         z-index: 3;
         transition: 0.5s all ease;
         &.close {
-          transform: rotate(180deg);
           span {
             &:nth-child(1) {
-              transform: rotate(42deg) translate(12px, 7px);
+              // transform: rotate(47deg) translate(15.5px, 7px);
+              transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+              transform-style: preserve-3d;
+              transform-origin: 0% 50%;
             }
             &:nth-child(2) {
               opacity: 0;
             }
             &:nth-child(3) {
-              transform: rotate(-42deg) translate(4.5px, 2px);
+              transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+              transform-style: preserve-3d;
+              transform-origin: 0% 50%;
               width: 2rem;
             }
           }
