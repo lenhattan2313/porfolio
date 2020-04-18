@@ -928,7 +928,7 @@ a {
 
 @media screen and (max-width: 575px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
   .intro__yourself {
     margin-left: 4em !important;
