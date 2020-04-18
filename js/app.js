@@ -1,19 +1,17 @@
 //variables
 const moveUp = document.querySelector(".move-up");
 const header = document.querySelector(".header");
-const menuBtn = document.querySelector(".menu-btn");
-const menu = document.querySelector(".menu");
-const navBranding = document.querySelector(".menu-branding");
-const navMenu = document.querySelector(".menu-nav");
-const navItem = document.querySelectorAll(".nav-item");
+const menuBtn = document.querySelector(".header__navigation--res");
+const nav = document.querySelector(".header__navigation");
+// const logo = document.querySelector(".header__logo");
+// const navList = document.querySelector(".navList");
+const navItems = document.querySelectorAll(".navItems");
 
 menuBtn.addEventListener("click", toggleClassMenu);
 function toggleClassMenu() {
   menuBtn.classList.toggle("close");
-  menu.classList.toggle("show");
-  navMenu.classList.toggle("show");
-  navBranding.classList.toggle("show");
-  navItem.forEach((item) => item.classList.toggle("show"));
+  nav.classList.toggle("show");
+  navItems.forEach((item) => item.classList.toggle("show"));
 }
 
 //smooth scroll
