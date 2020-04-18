@@ -958,7 +958,13 @@ a {
 
 @media screen and (max-width: 575px) {
   html {
-    font-size: 12px;
+    font-size: 16px;
+  }
+  .header-container .header__logo {
+    margin-left: 0 !important;
+  }
+  .header-container .header {
+    padding-left: 1em !important;
   }
   .intro__yourself {
     margin-left: 4em !important;
