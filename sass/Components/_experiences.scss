@@ -11,12 +11,13 @@
         margin: 0 auto;
         border-left: 2px solid $color-primary;
         padding: 1.5rem;
-        text-align: left;
+        // text-align: left;
         position: relative;
         width: 50%;
         font-size: 0.9rem;
         background: #f7f7f7;
-        margin-right: 5px;
+        padding-right: 5px;
+
         .date {
           letter-spacing: 1px;
           font-size: 1rem;
@@ -36,28 +37,6 @@
           margin-bottom: 0;
         }
       }
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -2.5rem;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 0.2rem;
-      height: 5rem;
-      background: $color-primary;
-      z-index: 2;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      top: -2.5rem;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 0.2rem;
-      height: 5rem;
-      background: $color-primary;
-      z-index: 2;
     }
   }
 }

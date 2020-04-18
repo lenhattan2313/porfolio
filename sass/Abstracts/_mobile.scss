@@ -59,7 +59,9 @@
         right: 2em;
         top: 1.2em;
         z-index: 3;
-        transition: 0.5s all ease;
+        span {
+          transition: 0.5s all ease;
+        }
         &.close {
           span {
             &:nth-child(1) {
@@ -70,6 +72,7 @@
               transform-origin: 0% 50%;
             }
             &:nth-child(2) {
+              transform: translateX(-15px);
               opacity: 0;
             }
             &:nth-child(3) {
@@ -217,10 +220,6 @@
         padding-left: 2em;
         width: 70%;
         margin-right: 2em;
-
-        .date::before {
-          left: -9em;
-        }
       }
     }
   }
