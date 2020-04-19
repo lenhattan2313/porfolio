@@ -241,6 +241,11 @@
   .heading__main {
     font-size: 2.5rem;
   }
+  .intro {
+    &__yourself {
+      margin-left: 2em !important;
+    }
+  }
 }
 // (max-width: 575px)
 @include mediaExtraSm {
@@ -257,7 +262,7 @@
 
   .intro {
     &__yourself {
-      margin-left: 4em !important;
+      margin-left: 2em !important;
     }
   }
   .intro-container .intro__picture div {

@@ -304,27 +304,45 @@ a {
 
 .moveup-icon {
   position: absolute;
-  bottom: 0;
-  left: 2em;
+  top: 3em;
+  right: 2em;
 }
 
-.moveup-icon ul > li {
-  margin-bottom: 0.8em;
+.moveup-icon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.moveup-icon ul .line {
+  width: 8em;
+  height: 2px;
+  display: inline-block;
+  margin-bottom: 2px;
+  background: black;
+}
+
+.moveup-icon ul li {
+  margin-right: 0.8em;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
-  color: red;
 }
 
-.moveup-icon ul > li a svg {
-  fill: red;
+.moveup-icon ul li a svg {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
 }
 
-.moveup-icon .line {
-  height: 10em;
-  width: 2px;
-  margin-left: 0.7em;
-  margin-bottom: 1em;
-  background: black;
+.moveup-icon ul li a svg:hover {
+  fill: #e9204f;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .about-container {
@@ -879,6 +897,9 @@ a {
   .heading__main {
     font-size: 2.5rem;
   }
+  .intro__yourself {
+    margin-left: 2em !important;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -892,7 +913,7 @@ a {
     padding-left: 1em !important;
   }
   .intro__yourself {
-    margin-left: 4em !important;
+    margin-left: 2em !important;
   }
   .intro-container .intro__picture div {
     height: 350px !important;
@@ -931,9 +952,5 @@ a {
   .experiences-container .experiences__timeline ul {
     width: 100%;
   }
-}
-
-svg {
-  fill: red;
 }
 /*# sourceMappingURL=main.css.map */

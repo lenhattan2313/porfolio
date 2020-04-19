@@ -50,30 +50,40 @@
 }
 .moveup-icon {
   position: absolute;
-  bottom: 0;
-  left: 2em;
+  top: 3em;
+  right: 2em;
   
-  ul > li {
-    margin-bottom: 0.8em;
-    transition: 0.5s all ease;
-    color: red;
-    a{
-      svg:hover{
-        fill: green;
-      }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .line{
+      width: 8em;
+      height: 2px;
+      display: inline-block;
+      margin-bottom: 2px;
+      background: black;
     }
-    // &:hover{
-    //   transform: translateY(-5px);
-    //   img{
-    //     fill: red
-    //   }
-    // }
-  }
-  .line{
-    height: 10em;
-    width: 2px;
-    margin-left: 0.7em;
-    margin-bottom: 1em;
-    background: black;
-  }
+    li {
+      margin-right: 0.8em;
+      transition: 0.5s all ease;
+      a{
+        svg{
+          transition: 0.5s all ease;
+          &:hover{
+            fill: $color-primary;
+            transform: translateY(-5px);
+          }
+        }
+        
+      }
+      // &:hover{
+      //   transform: translateY(-5px);
+      //   img{
+      //     fill: red
+      //   }
+      // }
+    }
+  } 
+  
 }
