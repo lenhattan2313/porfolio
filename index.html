@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -26,32 +28,32 @@
           <div class="header__navigation">
             <ul class="navList">
               <li class="navItems">
-                <a href="#" class="navLinks active">
+                <a href="#home" class="navLinks">
                   Home
                 </a>
               </li>
               <li class="navItems">
-                <a href="#" class="navLinks">
+                <a href="#about" class="navLinks">
                   About
                 </a>
               </li>
               <li class="navItems">
-                <a href="#" class="navLinks">
+                <a href="#portfolio" class="navLinks">
                   Portfolio
                 </a>
               </li>
               <li class="navItems">
-                <a href="#" class="navLinks">
+                <a href="#skills" class="navLinks">
                   Skills
                 </a>
               </li>
               <li class="navItems">
-                <a href="#" class="navLinks">
+                <a href="#experiences" class="navLinks">
                   Experiences
                 </a>
               </li>
               <li class="navItems">
-                <a href="#" class="navLinks">
+                <a href="#contact" class="navLinks">
                   Contact
                 </a>
               </li>
@@ -64,33 +66,43 @@
       </div>
     </header>
 
-    <section class="intro-container">
+    <section class="intro-container" id="home">
       <div class="intro">
         <div class="intro__yourself">
           <div class="intro__yourself--text">
-            <h1 class="heading__main">I'm Tan</h1>
-            <h2 class="heading__main">Web designer <br />& development</h2>
-            <a class="btn">See my CV</a>
+            <h1 class="heading__main" data-aos="fade-up" data-aos-delay="300">
+              I'm Tan
+            </h1>
+            <h2 class="heading__main" data-aos="fade-up" data-aos-delay="400">
+              Web designer <br />& development
+            </h2>
+            <a class="btn" data-aos="fade-up" data-aos-delay="500">See my CV</a>
           </div>
           <img src="./image/dot-picture.png" alt="dot-picture" />
         </div>
-        <div class="intro__picture">
+        <div class="intro__picture" data-aos="fade-up" data-aos-delay="700">
           <div class="">
             <span>My Picture</span>
           </div>
         </div>
       </div>
     </section>
-    <section class="about-container">
+    <section class="about-container" id="about">
       <div class="about">
         <div class="wrap">
           <div class="about__img">
-            <img src="./image/about.jpg" />
+            <img
+              src="./image/about.jpg"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            />
           </div>
-          <div class="about__content">
+          <div class="about__content" data-aos="fade-left" data-aos-delay="300">
             <div class="about__content__wrap">
               <span class="box"></span>
-              <h2 class="heading__main--sub">About</h2>
+              <h2 class="heading__main--sub">
+                About
+              </h2>
               <p class="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
                 iste nisi sint eum aut accusantium quis nemo dicta id
@@ -105,18 +117,28 @@
         </div>
       </div>
     </section>
-    <section class="portfolio-container">
+    <section class="portfolio-container" id="portfolio">
       <div class="portfolio">
         <div class="heading-section">
           <div class="title-line"></div>
-          <h2 class="heading__main--sub">Portfolio</h2>
+          <h2
+            class="heading__main--sub"
+            data-aos="fade-down"
+            data-aos-delay="300"
+          >
+            Portfolio
+          </h2>
         </div>
         <div class="portfolio__items">
-          <div class="portfolio-img">
+          <div class="portfolio-img" data-aos="fade-right" data-aos-delay="300">
             <img src="./image/blog.PNG" alt="picture" />
           </div>
           <div class="portfolio-content">
-            <div class="portfolio-content__wrap">
+            <div
+              class="portfolio-content__wrap"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
               <h3 class="heading__sub">Blog Travel</h3>
               <p class="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quia
@@ -130,7 +152,11 @@
         </div>
         <div class="portfolio__items">
           <div class="portfolio-content">
-            <div class="portfolio-content__wrap">
+            <div
+              class="portfolio-content__wrap"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
               <h3 class="heading__sub">Blog Website</h3>
               <p class="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quia
@@ -141,16 +167,20 @@
               <a href="#" class="btn"> <i class="fa fa-github"></i> Github</a>
             </div>
           </div>
-          <div class="portfolio-img">
+          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="400">
             <img src="./image/blog.PNG" alt="picture" />
           </div>
         </div>
         <div class="portfolio__items">
-          <div class="portfolio-img">
+          <div class="portfolio-img" data-aos="fade-right" data-aos-delay="500">
             <img src="./image/blog.PNG" alt="picture" />
           </div>
           <div class="portfolio-content">
-            <div class="portfolio-content__wrap">
+            <div
+              class="portfolio-content__wrap"
+              data-aos="fade-left"
+              data-aos-delay="500"
+            >
               <h3 class="heading__sub">Blog Travel</h3>
               <p class="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quia
@@ -164,16 +194,22 @@
         </div>
       </div>
     </section>
-    <section class="skills-container">
+    <section class="skills-container" id="skills">
       <div class="skills">
         <div class="skills-bg">
           <img src="./image/skills-bg.png" />
         </div>
         <div class="heading-section">
           <div class="title-line"></div>
-          <h2 class="heading__main--sub">My Skills</h2>
+          <h2
+            class="heading__main--sub"
+            data-aos="fade-down"
+            data-aos-delay="300"
+          >
+            My Skills
+          </h2>
         </div>
-        <div class="skills__grid">
+        <div class="skills__grid" data-aos="fade-up" data-aos-delay="300">
           <div class="skills__grid--items">
             <img src="./image/code.svg" />
             <div class="skills-content">
@@ -237,33 +273,57 @@
         </div>
       </div>
     </section>
-    <section class="experiences-container">
+    <section class="experiences-container" id="experiences">
       <div class="experiences">
         <div class="heading-section">
           <div class="title-line"></div>
-          <h2 class="heading__main--sub">Experiences</h2>
+          <h2
+            class="heading__main--sub"
+            data-aos="fade-down"
+            data-aos-delay="300"
+          >
+            Experiences
+          </h2>
         </div>
         <div class="experiences__timeline">
           <ul class="">
             <li class="date">
-              <h3 class="heading__sub">nCov - 19</h3>
-              <p class="text">
+              <h3
+                class="heading__sub"
+                data-aos="fade-left"
+                data-aos-delay="300"
+              >
+                nCov - 19
+              </h3>
+              <p class="text" data-aos="fade-left" data-aos-delay="300">
                 Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum
                 dolor sit amet consectetur adipisicing.
               </p>
               <span>(2019 - Present)</span>
             </li>
             <li class="date">
-              <h3 class="heading__sub">iNext Technology Co.</h3>
-              <p class="text">
+              <h3
+                class="heading__sub"
+                data-aos="fade-left"
+                data-aos-delay="400"
+              >
+                iNext Technology Co.
+              </h3>
+              <p class="text" data-aos="fade-left" data-aos-delay="400">
                 Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum
                 dolor sit amet consectetur adipisicing.
               </p>
               <span>(2019 - 2020)</span>
             </li>
             <li class="date">
-              <h3 class="heading__sub">Bach Khoa University</h3>
-              <p class="text">
+              <h3
+                class="heading__sub"
+                data-aos="fade-left"
+                data-aos-delay="500"
+              >
+                Bach Khoa University
+              </h3>
+              <p class="text" data-aos="fade-left" data-aos-delay="500">
                 Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum
                 dolor sit amet consectetur adipisicing.
               </p>
@@ -273,20 +333,20 @@
         </div>
       </div>
     </section>
-    <section class="contact-container">
+    <section class="contact-container" id="contact">
       <div class="contact">
-        <div class="contact__content">
+        <div class="contact__content" data-aos="fade-up" data-aos-delay="300">
           <div class="contact__content--text">
             Get In Touch
           </div>
           <div class="contact__content--box">
-            <form class="form-contact">
+            <form class="form-contact" data-aos="fade-up" data-aos-delay="400">
               <label for="email">
                 Email:
                 <input type="email" id="email" />
               </label>
             </form>
-            <div class="social">
+            <div class="social" data-aos="fade-up" data-aos-delay="500">
               <a href="#" class="icon"> <i class="fa fa-facebook"></i> </a>
               <a href="#" class="icon"> <i class="fa fa-instagram"></i> </a>
             </div>
@@ -299,5 +359,6 @@
       <p class="copyright">2020&copy;Tan&nbsp;Le&nbsp;Nhat</p>
     </footer>
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="./js/app.js"></script>
 </html>

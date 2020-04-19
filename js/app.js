@@ -6,6 +6,7 @@ const nav = document.querySelector(".header__navigation");
 // const logo = document.querySelector(".header__logo");
 // const navList = document.querySelector(".navList");
 const navItems = document.querySelectorAll(".navItems");
+const navLinks = document.querySelectorAll(".navLinks");
 
 menuBtn.addEventListener("click", toggleClassMenu);
 function toggleClassMenu() {
@@ -36,4 +37,17 @@ function smothScroll(destinate, duration) {
   }
   requestAnimationFrame(animation);
 }
+
+//animated
+AOS.init({
+  duration: 1500,
+  easing: "ease",
+});
+
+//turn pages
 moveUp.addEventListener("click", () => smothScroll(".header", 2000));
+navLinks.forEach((navLink) => {
+  navLink.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+});

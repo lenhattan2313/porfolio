@@ -61,12 +61,6 @@
             &:hover::before {
               width: 40%;
             }
-            &.active {
-              color: $color-primary;
-              &:hover::before {
-                width: 0%;
-              }
-            }
           }
         }
       }

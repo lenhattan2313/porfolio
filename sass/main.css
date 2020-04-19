@@ -17,6 +17,7 @@
   font-size: 1.875rem;
   font-weight: 400;
   letter-spacing: 2px;
+  color: #414141;
 }
 
 .text {
@@ -24,6 +25,7 @@
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   line-height: 22px;
+  color: #333333;
 }
 
 .heading-section {
@@ -53,6 +55,7 @@
 html {
   font-size: 16px;
   font-family: "Inconsolata", monospace;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -179,14 +182,6 @@ a {
 
 .header-container .header nav .header__navigation > .navList .navItems .navLinks:hover::before {
   width: 40%;
-}
-
-.header-container .header nav .header__navigation > .navList .navItems .navLinks.active {
-  color: #e9204f;
-}
-
-.header-container .header nav .header__navigation > .navList .navItems .navLinks.active:hover::before {
-  width: 0%;
 }
 
 .header-container .header__logo a {
@@ -330,6 +325,7 @@ a {
   color: black;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  z-index: -2;
   bottom: 0;
   bottom: 12.5rem;
   right: -4rem;
