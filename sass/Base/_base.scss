@@ -8,15 +8,7 @@ html {
   font-family: $font-family;
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar {
-  width: 10px;
-  height: 20px;
-  // background: $color-primary;
-}
-::-webkit-scrollbar-thumb {
-  background: white;
-  border-left: 1px solid $color-primary;
-}
+
 ul {
   list-style: none;
 }

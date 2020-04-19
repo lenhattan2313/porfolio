@@ -1,18 +1,17 @@
 .header-container {
-  position: fixed;
+  position: relative;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    position: fixed;
   border-bottom: 1px solid #f3f3f3;
   left: 0;
   right: 0;
   z-index: 3;
   height: 50px;
   background: rgba(255, 255, 255, 0.98);
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    padding-right: 2em;
-    padding-left: 2em;
     margin: 0 auto;
     .header__navigation--res {
       flex-direction: column;
@@ -70,6 +69,7 @@
         font-size: 1.125rem;
         margin-right: 1em;
         margin-top: 10px;
+        margin-left: 1em;
         position: relative;
         cursor: pointer;
         display: inline-block;

@@ -8,8 +8,9 @@
     position: relative;
     min-height: calc(100vh - 53px);
     margin: 0 auto;
+    position: relative;
     &__yourself {
-      margin-left: 4rem;
+      margin-left: 15rem;
       position: relative;
       &--text {
         margin-top: 10rem;
@@ -23,31 +24,25 @@
         transform: scale(0.8);
       }
     }
-    &__picture {
-      div {
-        margin-right: 5.5rem;
-        width: 300px;
-        height: 500px;
-        border-radius: 3rem;
-        border: 0.25rem solid $color-primary;
-        position: relative;
-        span {
-          position: absolute;
-          display: block;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          &::before {
-            content: "";
-            position: absolute;
-            width: 1.5rem;
-            height: 0.2rem;
-            background-color: $color-primary;
-            bottom: 0;
-            right: 0;
-          }
-        }
-      }
-    }
+    // &__picture {
+    //   position: relative;
+    //   .pic {
+    //     margin-right: 5.5rem;
+    //     width: 300px;
+    //     height: 500px;
+    //     position: relative;
+    //     // background: url("../image/intro.svg") center;
+    //     // filter: grayscale(65%);
+    //   }
+    //   .box {
+    //     position: absolute;
+    //     width: 500px;
+    //     height: 200px;
+    //     background: red;
+    //     top: 50%;
+    //     opacity: 0.5;
+    //     left: -10rem;
+    //   }
+    // }
   }
 }
