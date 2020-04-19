@@ -49,5 +49,6 @@ moveUp.addEventListener("click", () => smothScroll(".header", 2000));
 navLinks.forEach((navLink) => {
   navLink.addEventListener("click", () => {
     nav.classList.toggle("show");
+    menuBtn.classList.toggle("close");
   });
 });
