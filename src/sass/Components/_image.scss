@@ -1,0 +1,8 @@
+.about__img img {
+    $map: (576px: 200px, 768px:250px, 992px: 300px);
+    @include poly-fluid-sizing('width', $map);
+}
+ .portfolio-img img {
+    $map: (360px: 300px, 576px: 400px);
+    @include poly-fluid-sizing('width', $map);
+  }

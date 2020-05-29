@@ -21,9 +21,7 @@
     }
     .portfolio-img {
       width: 50%;
-
       img {
-        width: 400px;
         border: 2px solid #f3f3f3;
         display: block;
         margin: 0 auto;
@@ -37,10 +35,8 @@
       }
     }
     .portfolio-content {
-      width: 50%;
+      margin: 0 auto;
       &__wrap {
-        margin: 0 auto;
-        width: 400px;
         .btn {
           margin-right: 1em;
           .fa {

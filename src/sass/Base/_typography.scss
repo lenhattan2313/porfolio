@@ -1,19 +1,24 @@
 .heading__main {
-  font-size: 3.375rem;
   font-weight: 700;
   letter-spacing: 2px;
+  $map: (576px: 40px, 768px:40px, 992px: 48px, 1172px: 54px);
+  @include poly-fluid-sizing('font-size', $map);
 }
 
 .heading__main--sub {
-  font-size: 2.25rem;
-  font-weight: 400;
+  font-weight: 600;
+  font-family: sans-serif;
   letter-spacing: 1px;
+  $map: (576px: 18px, 768px:20px, 992px: 24px);
+  @include poly-fluid-sizing('font-size', $map);
 }
 .heading__sub {
-  font-size: 1.875rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  color: #414141;
+  font-weight: 600;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  color: rgba(0,0,0,0.84);
+  $map: (576px: 16px, 768px:18px, 992px: 20px);
+  @include poly-fluid-sizing('font-size', $map);
 }
 
 .text {
@@ -21,7 +26,8 @@
   font-size: 1rem;
   font-family: $font-text;
   line-height: 22px;
-  color: #333333;
+  color: black;
+
 }
 .heading-section {
   display: flex;

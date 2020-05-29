@@ -7,14 +7,12 @@
     max-width: 1200px;
     margin: 0 auto;
     .wrap {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       width: 90%;
       margin: 0 auto;
       .about__img {
         img {
-          width: 300px;
           display: block;
           border-radius: 1rem;
           box-shadow: 0 3px 40px #0000004d;
@@ -28,8 +26,8 @@
         }
       }
       .about__content {
+        margin: 0 auto;
         position: relative;
-        width: 300px;
         .box {
           width: 5.2rem;
           height: 2.5rem;

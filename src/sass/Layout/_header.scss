@@ -1,17 +1,19 @@
 .header-container {
-  position: relative;
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    position: fixed;
+  position: fixed;
   border-bottom: 1px solid #f3f3f3;
   left: 0;
   right: 0;
   z-index: 3;
   height: 50px;
   background: rgba(255, 255, 255, 0.98);
+  width: 100%;
+  z-index: 1000;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+ 
     margin: 0 auto;
     .header__navigation--res {
       flex-direction: column;
@@ -34,8 +36,6 @@
       }
     }
     nav {
-      // display: flex;
-      // align-content: flex-end;
       margin-top: 1rem;
       .header__navigation > .navList {
         display: flex;
@@ -51,7 +51,7 @@
             &::before {
               content: "";
               position: absolute;
-              bottom: 0;
+              bottom: -3px;
               height: 0.2rem;
               width: 0%;
               background-color: $color-primary;
